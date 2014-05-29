@@ -1,0 +1,18 @@
+cell = pair of coordinates
+world = list of all live cells
+neighbors = set of delta vectors
+
+iterate through generations
+	display world
+	associate #(live_neighbors) with each (member cell of world or a neighboring cell)
+		count total occurance of each cell neighboring a live cell set that are in the world
+			group all neighbor cells using delta vectors for each live cell and add to associating collection
+	set next world with cells that occur in associate collection the right number of times
+
+
+displaying world ==
+	collect x_values in world
+	collect y_values in world
+	from min y_value to max y_value
+		range from min x_value to max x_value
+			print accordinly for whether resulting coordinate is in world
