@@ -4,7 +4,7 @@ class BoardController
 	attr_reader :board, :views, :generation
 
 	def initialize
-		@board = Board.new(GLIDER)
+		@board = Board.new(GLIDER_GUN)
 		@min_x = @board.x_min
 		@max_x = @board.x_max
 		@min_y = @board.y_min

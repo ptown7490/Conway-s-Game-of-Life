@@ -38,5 +38,12 @@ describe('Board', function() {
       testBoard.row(0).length.should.eq(2);
     });
   });
+
+  describe('.nextGeneration', function() {
+    it('', function() {
+      var testBoard = new Board(glider, []);
+      testBoard.nextGeneration().live().should.eq(glider.length);
+    });
+  });
 });
 

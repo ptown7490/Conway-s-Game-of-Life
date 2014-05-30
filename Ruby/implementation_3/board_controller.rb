@@ -4,7 +4,7 @@ class BoardController
 	attr_reader :board, :views, :generation
 
 	def initialize
-		@board = Board.new(nil, ACORN)
+		@board = Board.new(nil, GLIDER_GUN)
 		@generation = 0
 		@views = []
 	end
