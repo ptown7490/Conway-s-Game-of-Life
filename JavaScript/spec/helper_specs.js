@@ -2,7 +2,9 @@ describe('mergeWithoutFlatten(array_1, array_2)', function() {
   it('combines all elements from two arrays into one.', function() {
     var arr1 = [1, 2, [1, 2]];
     var arr2 = [1, 3, [4, 5, 6]];
-    mergeWithoutFlatten(arr1, arr2).length.should.eq(6);
+    var merge = mergeWithoutFlatten(arr1, arr2);
+    merge.length.should.eq(6);
+    Array.prototype.isPrototypeOf(merge).should.eq(true);
   });
 });
 
@@ -16,6 +18,7 @@ describe('coordinateEquality(coordinate_1, coordinate_2)', function() {
 
 describe('arrayElementCreation(start, end, func)', function() {
   it('', function() {
-    
+
   });
 });
+

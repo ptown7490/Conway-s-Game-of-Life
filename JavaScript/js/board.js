@@ -78,7 +78,7 @@ Board.prototype = {
     for (var i = 0; i < countHash.length; i++) {
       var key = countHash[i][0];
       var value = countHash[i][1];
-      if (value === 3 || (value === 2 && contains(this.board, key)))
+      if (value === 3 || (value === 2 && containsCoordinate(this.board, key)))
         nextBoard.push(key);
     }
 

@@ -2,9 +2,9 @@ function coordinateEquality(coord_1, coord_2) {
   return (coord_1[0] === coord_2[0] && coord_1[1] === coord_2[1]);
 }
 
-function contains(array, element) {
+function containsCoordinate(array, coord) {
   for (var i = 0; i < array.length; i++)
-    if (coordinateEquality(array[i], element))
+    if (coordinateEquality(array[i], coord))
       return true;
   return false;
 }
@@ -12,7 +12,7 @@ function contains(array, element) {
 function uniq(array) {
   var newArray = [ ];
   for (var i = 0; i < array.length; i++) {
-    if (!contains(newArray, array[i])) {
+    if (!containsCoordinate(newArray, array[i])) {
       newArray.push(array[i]);
     }
   }
@@ -39,7 +39,7 @@ function arrayElementCreation(start, end, func) {
 }
 
 function deleteIf(array, element, func) {
-  var newArray = [ ]
+  var newArray = [ ];
   for (var i = 0; i < array.length; i++) {
     if (func(array[i], element))
       continue;
@@ -49,7 +49,7 @@ function deleteIf(array, element, func) {
 }
 
 function mergeWithoutFlatten(array_1, array_2) {
-  var newArray = new Object(array_1);
+  var newArray = Object.create(array_1);
 
   for (var i = 0; i < array_2.length; i++)
     newArray.push(array_2[i]);

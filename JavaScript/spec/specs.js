@@ -2,7 +2,7 @@
 describe('Board', function() {
   it('allocates a grid on the Cartesian plane.', function() {
     var testBoard = new Board([[0,0]], []);
-    (Board.prototype.isPrototypeOf(testBoard)).should.eq(true);
+    Board.prototype.isPrototypeOf(testBoard).should.eq(true);
   });
 
   it('has a display size defined by extrema.', function() {
