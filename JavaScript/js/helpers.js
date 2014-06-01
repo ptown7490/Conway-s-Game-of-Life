@@ -1,13 +1,11 @@
 function coordinateEquality(coord_1, coord_2) {
-  return (coord_1[0] == coord_2[0] && coord_1[1] == coord_2[1]);
+  return (coord_1[0] === coord_2[0] && coord_1[1] === coord_2[1]);
 }
 
 function contains(array, element) {
-  for (var i = 0; i < array.length; i++) {
-    if (coordinateEquality(array[i], element)) {
+  for (var i = 0; i < array.length; i++)
+    if (coordinateEquality(array[i], element))
       return true;
-    }
-  }
   return false;
 }
 

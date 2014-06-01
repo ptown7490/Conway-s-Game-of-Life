@@ -39,7 +39,7 @@ describe('Board', function() {
     });
   });
 
-  describe('.nextGeneration', function() {
+  describe('.nextGeneration()', function() {
     it('', function() {
       var testBoard = new Board(glider, []);
       testBoard.nextGeneration().live().should.eq(glider.length);
