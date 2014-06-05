@@ -22,7 +22,9 @@ Note: all listed commands executed with
 the working directory being the root folder of the sub-project.
 ###JavaScript
 ####Test
-* load ```spec/spec-runner.html``` in browser
+* load
+ ```spec/spec-runner.html```
+ in browser
 
 ###Ruby
 ####1
@@ -44,7 +46,7 @@ the working directory being the root folder of the sub-project.
 * ```$ ruby game_of_life.rb```
 
 #####Shoes GUI
-* Open shoes_practice.rb in [Shoes.app][Shoes GitHub]
+* Open ```shoes_practice.rb``` in [Shoes.app][Shoes GitHub]
 
 ####4
 #####Test
@@ -54,7 +56,7 @@ the working directory being the root folder of the sub-project.
 * ```$ ruby game_of_life.rb```
 
 #####Shoes GUI
-* Open shoes_practice.rb in Shoes.app
+* Open ```shoes_practice.rb``` in Shoes.app
 
 ####5
 #####Test
